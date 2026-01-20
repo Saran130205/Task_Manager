@@ -1,0 +1,298 @@
+/* Style for overall background */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: antiquewhite;
+  padding: 1%;
+}
+
+.title{
+    width: 100%;
+    max-width: 540px;
+    background: #cec5af;
+    margin: 100px auto 20px;
+    padding: 21px 11px 12px;
+    border-radius: 10px;
+}
+/* style for Body */
+.title h2{
+  color: rgb(16, 76, 255);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row{
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background: #b8c9ef;
+  border-radius: 30px;
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+
+.description{
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background: #b8c9ef;
+  border-radius: 30px;
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button{
+  display: block;
+  margin: 15px auto;
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+#error_msg {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Task list layout */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e8e0c8;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Left side (number + inputs) */
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+/* Task number */
+.task-number {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Inputs inside list */
+.task-item input {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  width: 150px;
+}
+
+/* Button group */
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Override global button style */
+.task-actions button {
+  margin: 0;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+/* Delete confirmation container */
+.delete-confirm {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Confirmation text */
+.confirm-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Yes / No buttons in one line */
+.confirm-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Override global button style ONLY here */
+.confirm-buttons button {
+  margin: 0;
+  padding: 10px 25px;
+  font-size: 14px;
+  border-radius: 25px;
+}
+
+/* Button colors */
+.btn-danger {
+  background-color: #ff5945;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #888;
+  color: white;
+}
+
+.task-time {
+  font-size: 13px;
+  color: #555;
+  margin-top: 8px;
+  text-align: right;
+}
+
+/* Task card */
+.task-card {
+  background: #e9e2cc;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+/* Header */
+.task-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Inputs as text */
+.task-card input {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  width: 100%;
+}
+
+/* Description */
+.task-desc {
+  margin-top: 8px;
+  color: #444;
+}
+
+/* Meta info */
+.task-meta {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* Actions */
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* Buttons inside cards */
+.task-actions button {
+  margin: 0;
+  padding: 6px 16px;
+  font-size: 13px;
+  border-radius: 18px;
+}
+
+/* Description text (paragraph friendly) */
+.task-desc-text {
+  width: 100%;
+  border: none;
+  background: transparent;
+  resize: none;          /* no resize handle */
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  white-space: pre-wrap; /* keeps paragraph formatting */
+  word-wrap: break-word; /* wraps long words */
+}
+
+#deleteConfirm {
+  display: none;
+}
+
+/* Base button reset (keeps consistency) */
+button {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* Add Task */
+.btn-add {
+  background-color: #4a6cf7;
+  color: white;
+}
+
+/* Edit */
+.btn-edit {
+  background-color: #ff9800;
+  color: white;
+}
+
+/* Save */
+.btn-save {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Delete */
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Cancel / No */
+.btn-cancel {
+  background-color: #9e9e9e;
+  color: white;
+}
+
+/* Hover effect (common) */
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+

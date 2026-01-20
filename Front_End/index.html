@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2> Simple To-Do List</h2>x
+            <div class="row">
+            <input type="text" id="task-input" placeholder="Enter a New Task">
+            </div>
+            <div class="description">
+            <input type="text" id="desc" placeholder="Enter a Description">
+            </div>
+            <p id="error_msg"></p>
+            <div id="deleteConfirm" class="delete-confirm">
+            <p class="confirm-text">Are you sure you want to delete this task?</p>
+            <div class="confirm-buttons">
+                <button class="btn-delete" onclick="confirmDelete()">Yes</button>
+                <button class="btn-cancel" onclick="cancelDelete()">No</button>
+            </div>
+            </div>
+            <button class="btn-add" onclick="addTask()">
+            <i class="fa-solid fa-plus"></i> Add Task
+            </button>
+
+
+            <ul id="listcontainer"></ul>
+        </div> 
+    </div>  
+    <script src ="script.js"></script>
+</body>
+</html>
